@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@1&family=Catamaran:wght@400;500&family=Montserrat:wght@200;300;400&family=Poppins:wght@200;300;400&family=Raleway:ital,wght@0,300;0,400;0,600;1,300&family=Tangerine:wght@400;700&family=Vollkorn&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #7dd3fcff;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1050px;
+  gap: 10px;
+}
+
+section {
+  background-color: #fff;
+  border-radius: 7px;
+}
+
+.tools-board {
+  width: 210px;
+  padding: 15px 22px 0;
+}
+
+.tools-board .row {
+  margin-bottom: 20px;
+}
+
+.row .options {
+  list-style: none;
+  margin-bottom: 10px 0 0 5px;
+}
+
+.row .options .option {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.option:is(:hover, .active) img {
+  filter: invert(17%) sepia(90%) saturate(3000%) hue-rotate(900deg)
+    brightness(100%) contrast(100%);
+}
+.option :where(span, label) {
+  color: #5a6168;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.option #fill-color {
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+}
+
+.drawing-board {
+  flex: 1;
+}
+
+img {
+  width: 10%;
+  height: 10%;
+}
