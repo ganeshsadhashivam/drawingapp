@@ -34,7 +34,7 @@
         <div class="row">
           <label for="" class="title">Options</label>
           <ul class="options">
-            <li class="option">
+            <li class="option active">
               <img src="./icons/brush.svg" alt="rectangle" width="5%" />
               <span>Brush</span>
             </li>
@@ -48,17 +48,19 @@
             </li>
           </ul>
         </div>
-        <div class="row">
+        <div class="row colors">
           <label for="" class="title">Colors</label>
           <ul class="options">
-            <li class="options"></li>
-            <li class="options"></li>
-            <li class="options"></li>
-            <li class="options"></li>
-            <li class="options"></li>
+            <li class="option"></li>
+            <li class="option selected"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option">
+              <input type="color" id="color-picker" value="#4a98f7" />
+            </li>
           </ul>
         </div>
-        <div class="row">
+        <div class="row buttons">
           <button class="clear-canvas">Clear Canvas</button>
           <button class="save-img">Save As Image</button>
         </div>
