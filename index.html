@@ -13,20 +13,20 @@
         <div class="row">
           <label for="" class="title">Shapes</label>
           <ul class="options">
-            <li class="option">
+            <li class="option tool" id="rectangle">
               <img src="./icons/rectangle.svg" alt="rectangle" width="5%" />
               <span>Rectangle</span>
             </li>
-            <li class="option">
+            <li class="option tool" id="circle">
               <img src="./icons/circle.svg" alt="rectangle" width="5%" />
               <span>Circle</span>
             </li>
-            <li class="option">
+            <li class="option tool" id="triangle">
               <img src="./icons/triangle.svg" alt="rectangle" width="5%" />
               <span>Triangle</span>
             </li>
             <li class="option">
-              <input type="checkbox" />
+              <input type="checkbox" id="fill-color" />
               <label for="fill-color">Fill color</label>
             </li>
           </ul>
@@ -34,17 +34,16 @@
         <div class="row">
           <label for="" class="title">Options</label>
           <ul class="options">
-            <li class="option active">
+            <li class="option active tool" id="brush">
               <img src="./icons/brush.svg" alt="rectangle" width="5%" />
               <span>Brush</span>
             </li>
-            <li class="option">
+            <li class="option tool" id="eraser">
               <img src="./icons/eraser.svg" alt="rectangle" width="5%" />
               <span>Eraser</span>
             </li>
-
             <li class="option">
-              <input type="range" id="size-slider" />
+              <input type="range" id="size-slider" min="1" max="30" value="5" />
             </li>
           </ul>
         </div>
